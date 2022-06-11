@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Libra Franklin', sans-serif;
+}
+
+main{
+  margin-top: 60px;
+  text-align: center;
+  max-width: 650px;
+  margin: 60px auto;
+}
+
+h1{
+  font-weight: 300;
+  font-size: 50px;
+  color:hsl(0, 0%, 59%);
+  margin-bottom: 10px;
+}
+
+h1 span{
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+
+h2{
+  font-size: 20px;
+  color: hsl(209, 33%, 12%);
+}
+
+form{
+  margin-top: 50px;
+  text-align: left;
+  /* display: flex; */
+  position: relative;
+}
+
+small{
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+  margin: 10px;
+  display: none;
+  position: absolute;
+}
+
+form.error small{
+  display: block;
+}
+
+input{
+
+  font-family: 'Libra Franklin', sans-serif;
+  font-size: 16px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  border: 1px solid hsl(223, 100%, 88%);
+  width: 425px;
+  max-width: 100%;
+
+}
+
+
+input::placeholder{
+
+  color:hsl(0, 0%, 59%);
+
+}
+input.error{
+  border: 1px solid hsl(354, 100%, 66%);
+}
+input.error::placeholder{
+  color:hsl(354, 100%, 66%);
+}
+button{
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 5px 5px hsl(223, 87%, 63%);
+  font-family: 'Libra Franklin', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 60px;
+  margin-left: 20px;
+  max-width: 100%;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+.illustration{
+  max-width: 100%;
+  margin: 60px 0;
+}
+
+.social-list{
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list li{
+  margin: 10px;
+}
+
+.social-list li a{
+  border: 1px solid hsla(223, 100%, 88%, 0.654);
+  color: hsl(223, 87%, 63%);
+  font-size: 15px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.social-list li a:hover{
+
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  border: hsl(223, 87%, 63%);
+
+
+
+}
+footer p{
+  color:hsl(0, 0%, 59%);
+  font-size: 14px;
+}
+
+@media screen and (max-width:640px){
+
+ 
+  button{
+    width: 425px;
+    margin-left: 0px;
+    margin-top: 35px;
+  }
+  small{
+    top: 50px;
+  }
+}
