@@ -9,11 +9,8 @@ form.addEventListener('submit', e =>{
 
   const emailValue = email.value;
 
-  if(!emailValue){
-
-    
-
-  }else if(!validateEmail(emailValue)){
+  
+   if(!validateEmail(emailValue)){
 
      email.classList.add('error')
      form.classList.add('error')
